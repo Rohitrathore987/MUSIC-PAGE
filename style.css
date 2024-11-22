@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     position: center;
-    background: linear-gradient(to bottom,rgb(133, 75, 37),#171b18);
+    background: linear-gradient(to top,#171b18,#171b18,rgb(73, 43, 23));
 
 
 }
@@ -64,48 +64,53 @@
 #top ul li{
     /* padding:  10px;
     gap: 10px; */
-    margin: 19px;
+    margin-left: 19px;
 }
-#bottom{
-    width: 100%;
-    height: 100vh;
-    /* background: linear-gradient(to right,#171b18,#171b18); */
-    
-}
-.btop{
+
+.topb{
     display: flex;
     width: 100%;
-    height: 70px;
-    margin: 7px;
+    align-items: center;
     justify-content: space-between;
 }
-.btopl i{
+.topbl i{
     font-size: 25px;
     font-weight: 400;
-    margin-left: 10px;
+    
 }
-.btopr i{
+.topbr i{
     font-size: 50px;
     font-weight: 800;
     color: green;
     margin-right: 5px;
 }
+#bottom{
+    width: 100%;
+    height: 60%;
+    /* background: linear-gradient(to right,#171b18,#171b18); */
+    
+
 .bbottom{
     width: 100%;
-
     padding: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     
 }
 .pic{
-    width: 60px;
-    height:60px;
+    width: 45px;
+    height:45px;
     border-radius: 50%;
-    margin: 10px;
+    margin: 9px;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCTVVSPOzVLwDcltXHCvqCrFx9jk573HecvA&s);
     background-position: center;
     background-size: cover;
+    }
+    .bbottom h5 span{
+        font-size: 17px;
+        font-weight: 400;
+
     }
     .bbottom h3{
         width: 105px;
@@ -116,13 +121,14 @@
     width: 200px;
     
 }
+
 #bottom p{
-    padding: 15px;
+    padding: 10px;
 }
 .pic1{
-    width: 60px;
-    height:60px;
-    margin: 8px;
+    width: 45px;
+    height:45px;
+    margin: 5px;
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WGnhdPHAZM56XgRnXI1T-zlsOj3RYc1uvQ&s);
     background-position: center;
     background-size: cover;
@@ -130,9 +136,9 @@
 }
 
 .pic2{
-    width: 60px;
-    height:60px;
-    margin: 8px;
+    width: 45px;
+    height:45px;
+    margin: 5px;
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY1WHnJB_2nixT79Rq4JORcOOCZ0L7hltJFw&s) ;
     background-position: center;
     background-size: cover;
@@ -142,6 +148,7 @@
 .pic2 h3{
     width: 200px;
     
+}
 }
 @media (max-width:780px) {
     #main{
@@ -172,23 +179,28 @@
     }
     #top ul{
         margin-left: 5px;
+        font-size:12px;
+        font-weight: 400;
     }
     #bottom{
         width: 100%;
         height: 60%;
         
     }
-    .btopl i{
+    .topbl i{
         margin-left: 3px;
     }
-    .btopr i{
-        margin-right: 50px;
+    .topbr i{
+        margin-right: 5px;
     }
     
 }
-@media (max-width:400px){
-    .btop{
-        margin-top: 60px;
+@media (max-width:550px){
+    .topb{
+        margin-top: 5px;
+    }
+    .bbottom{
+        margin-top: 2px;
     }
 
 }
